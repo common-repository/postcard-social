@@ -1,0 +1,224 @@
+ul.postcard-gallery {
+  overflow: hidden;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+  ul.postcard-gallery li.postcard-container {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    padding: 1%;
+    margin: 1.75% 1.75%;
+    width: 19.5%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 1px 1px #a6a6a6;
+    -moz-box-shadow: 0 0 1px 1px #a6a6a6;
+    box-shadow: 0 0 1px 1px #a6a6a6; }
+    ul.postcard-gallery li.postcard-container:hover {
+      background-color: #e6e6e6; }
+      ul.postcard-gallery li.postcard-container:hover span.video-indicator {
+        opacity: 0.9; }
+    @media all and (max-width: 480px) {
+      ul.postcard-gallery li.postcard-container {
+        width: 27.833%; } }
+  ul.postcard-gallery img.thumbnail {
+    width: 100%;
+    display: block; }
+
+ul.postcard-feed {
+  list-style-type: none !important; }
+  ul.postcard-feed li.postcard-container {
+    overflow: hidden;
+    clear: both;
+    margin: 1.25em 0 2.1875em;
+    padding-bottom: 0.3125em; }
+    @media all and (max-width: 480px) {
+      ul.postcard-feed li.postcard-container {
+        margin-top: 0.9375em;
+        margin-bottom: 0.9375em; } }
+  ul.postcard-feed div.info-container {
+    position: relative;
+    float: left;
+    margin-right: 0.625em;
+    padding: 1.25em;
+    width: 3.75em;
+    height: 3.75em;
+    text-align: center; }
+    @media all and (max-width: 480px) {
+      ul.postcard-feed div.info-container {
+        font-size: 75%; } }
+  ul.postcard-feed div.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3.125em;
+    z-index: 10;
+    vertical-align: middle;
+    color: #e6e6e6;
+    font-size: 1.125em;
+    background: rgba(0, 0, 0, 0.5); }
+    ul.postcard-feed div.date span.value {
+      display: inline-block;
+      margin-top: 33%; }
+  ul.postcard-feed img.profile-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.25em;
+    height: 6.25em;
+    border-radius: 3.125em; }
+  ul.postcard-feed div.message-container {
+    overflow: hidden;
+    padding: 0.625em 0;
+    line-height: 150%; }
+    ul.postcard-feed div.message-container span.postcard-user-title {
+      display: block;
+      margin-bottom: 0.3125em;
+      color: #a6a6a6;
+      font-size: 1.25em; }
+    ul.postcard-feed div.message-container span.postcard-message {
+      word-wrap: break-word;
+      font-size: 1.25em; }
+      ul.postcard-feed div.message-container span.postcard-message a {
+        text-decoration: none; }
+      @media all and (max-width: 480px) {
+        ul.postcard-feed div.message-container span.postcard-message {
+          font-size: 1em; } }
+  ul.postcard-feed a.postcard-link {
+    margin: 0.625em 0;
+    display: block;
+    font-size: 1.25em; }
+  ul.postcard-feed a.postcard-permalink {
+    display: none; }
+  ul.postcard-feed div.media-container {
+    position: relative;
+    margin: 0.625em auto 0;
+    clear: both; }
+  ul.postcard-feed div.image-container, ul.postcard-feed div.video-container {
+    position: absolute;
+    display: block; }
+  ul.postcard-feed video {
+    max-width: 100%; }
+  ul.postcard-feed img.feed-image {
+    width: 100%; }
+
+span.video-indicator {
+  text-indent: -562.5em;
+  opacity: 0.8;
+  display: block;
+  position: absolute;
+  top: 0.625em;
+  left: 0.625em;
+  width: 2.25em;
+  height: 2.5em;
+  z-index: 10;
+  background-image: url(../img/video-play-button.png);
+  background-repeat: no-repeat; }
+
+#postcard-modal-window {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); }
+  @media all and (max-width: 900px) {
+    #postcard-modal-window {
+      font-size: 80%; } }
+  @media all and (max-width: 720px) {
+    #postcard-modal-window {
+      font-size: 60%; } }
+
+.vertical-center {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.postcard-modal-container {
+  display: table-cell;
+  vertical-align: middle; }
+  .postcard-modal-container button.next, .postcard-modal-container button.prev {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    text-indent: -562.5em;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.75em;
+    width: 2.5em;
+    height: 7.5em;
+    opacity: 0.8; }
+    .postcard-modal-container button.next:hover, .postcard-modal-container button.prev:hover {
+      opacity: 1; }
+  .postcard-modal-container button.next {
+    right: 0.625em;
+    background: url(../img/gallery-next.png);
+    background-size: 100% 100%; }
+  .postcard-modal-container button.prev {
+    left: 0.625em;
+    background: url(../img/gallery-prev.png);
+    background-size: 100% 100%; }
+
+.postcard-modal {
+  cursor: default;
+  margin: 0.625em auto;
+  width: 50em;
+  height: 30em;
+  background: white; }
+  @media all and (max-width: 720px) {
+    .postcard-modal {
+      width: 30em;
+      height: 45em; } }
+  .postcard-modal .media-section {
+    float: left;
+    background-color: #111111;
+    width: 30em;
+    height: 30em; }
+  .postcard-modal .media-container {
+    width: 100%;
+    height: 100%; }
+  .postcard-modal .media {
+    max-width: 30em;
+    max-height: 30em; }
+  .postcard-modal .message-section {
+    float: left;
+    padding: 0.625em 0.625em;
+    width: 18.75em;
+    height: 25em; }
+    @media all and (max-width: 720px) {
+      .postcard-modal .message-section {
+        width: 28.75em;
+        height: 13.75em; } }
+  .postcard-modal .info-container {
+    color: #666666;
+    text-align: center;
+    margin: 0.625em auto 1.25em; }
+    @media all and (max-width: 720px) {
+      .postcard-modal .info-container {
+        float: left;
+        padding-top: 2.5em;
+        width: 10em; } }
+  .postcard-modal img.profile-pic {
+    margin-bottom: 0.3125em; }
+  .postcard-modal .message-container {
+    display: inline-block;
+    width: 100%;
+    border-top: 0.0625em solid #dddddd;
+    border-bottom: 0.0625em solid #dddddd;
+    padding: 0.625em 0;
+    text-align: center;
+    line-height: 1.75em;
+    color: #666666;
+    word-wrap: break-word; }
+    .postcard-modal .message-container .value {
+      font-size: 1.375em; }
+    @media all and (max-width: 720px) {
+      .postcard-modal .message-container {
+        display: block;
+        text-align: left;
+        padding: 2.5em 0; } }

@@ -1,0 +1,13 @@
+{
+  "name": "Postcard-Social-Plugin",
+  "private": true,
+  "version": "v1.0.0",
+  "repository": "http://plugins.svn.wordpress.org/postcard-social/",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
